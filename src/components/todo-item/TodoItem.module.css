@@ -1,0 +1,75 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  background-color: #eaeaea;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 1em;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.delete,
+.edit {
+  border: none;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.delete {
+  background-color: #e16161;
+  background-image: url("../../images/del.svg");
+}
+
+.delete:hover {
+  background-color: #ff4b4b;
+}
+
+.edit {
+  background-color: #61e19b;
+  background-image: url("../../images/edit.svg");
+  background-size: 15px;
+}
+
+.editable {
+  background-image: url("../../images/ok.svg");
+  background-size: 19px;
+}
+
+.editInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  max-width: 100px;
+  padding: 2px 0px;
+  font-size: 1em;
+}
+
+.editInput:focus {
+    /* border-bottom: 1px solid black; */
+  outline: none;
+}

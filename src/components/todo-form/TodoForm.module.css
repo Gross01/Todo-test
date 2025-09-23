@@ -1,0 +1,30 @@
+.div {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.input {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 1em;
+    background-color: transparent;
+}
+
+.button {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+.button:active {
+    opacity: .3;
+}
