@@ -34,7 +34,7 @@ const TodoItem = React.memo(({task, deleteTask, toggleTask, editTask}: TProps) =
 
     return (
         <li className={styles.item} >
-            <input type='checkbox' checked={checked} onChange={onChange}/>
+            <input type='checkbox' checked={checked} onChange={onChange} disabled={editable}/>
             {editable 
                 ? <input 
                     className={styles.editInput} 
